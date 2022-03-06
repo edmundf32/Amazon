@@ -30,7 +30,7 @@ namespace Amazon.Controllers
 
             List<string> instances = new List<string>() { "1","2"};
 
-            AmazonEC2Client client = new AmazonEC2Client("AKIAVPV5RUH3XZQCDLAZ", "IDZX7PF6uOG7nMVq2sibHNBUG0g5MvELugFfCMI9", RegionEndpoint.EUWest1);
+            AmazonEC2Client client = new AmazonEC2Client("insert", "insert", RegionEndpoint.EUWest1);
 
             var result = client.DescribeInstancesAsync().Result;
 
