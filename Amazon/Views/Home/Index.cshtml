@@ -1,0 +1,27 @@
+﻿
+@model Amazon.Models.IndexModel;
+@{
+    ViewData["Title"] = "Home Page";
+  
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Proof of conecpt for connecting to EC2 using C#.</p>
+<table>
+    <tr>
+        <th>Item</th>
+        <th>Description</th>
+    </tr>
+    @foreach(var item in Model.Instances)
+    {
+        <tr> 
+            <td>Instance</td>
+            <td>@item;</td>
+        </tr>
+    }
+
+
+    
+    </table>
+</div>
